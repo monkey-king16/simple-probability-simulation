@@ -31,22 +31,17 @@ def plot_3d_probability():
             y_red.append(r1)
             z_prob.append(p_win)
 
-    # Plot the 3D scatter graph
-    # c=z_prob colors the points based on their height (probability)
-    # s=100 controls the size of the data points
+
     scatter = ax.scatter(x_blue, y_red, z_prob, c=z_prob, cmap='viridis', s=100, alpha=0.9)
     
-    # Labeling exactly as requested
     ax.set_xlabel('Blue Balls in Urn 1 (X)')
     ax.set_ylabel('Red Balls in Urn 1 (Y)')
     ax.set_zlabel('Probability of Winning (Z)')
     ax.set_title('3D Probability Distribution')
     
-    # Force axes to show only whole numbers for ball counts
     ax.set_xticks(range(6))
     ax.set_yticks(range(6))
     
-    # Add a color bar for easier reading of the Z values
     plt.colorbar(scatter, ax=ax, pad=0.1, label='Probability', shrink=0.7)
     
     plt.tight_layout()
