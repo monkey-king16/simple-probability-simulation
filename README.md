@@ -1,2 +1,2 @@
 # simple-probability-simulation
-![3D Probability Distribution](3d_graph.png)
+![3D Probability Distribution](Figure_1.png)
