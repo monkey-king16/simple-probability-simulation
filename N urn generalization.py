@@ -1,3 +1,10 @@
+
+#Scale the problem from 2 urns to k urns. Finding the optimal distribution of B blue balls and R red balls across k urns
+#By using dynamic programming,  break a massive exponential problem into smaller, overlapping chunks. 
+#It evaluates the optimal strategy for the last urn, then the last two urns, building backward until it solves for N.
+
+
+
 import functools
 
 def solve_n_urns(N, B, R):
